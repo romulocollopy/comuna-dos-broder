@@ -1,0 +1,19 @@
+# terra-coletiva — static presentation site (no backend). The image bakes
+# presentation/{html,css,images} into nginx; see Dockerfile.
+# Rebuild after editing content: docker compose up -d --build terra-coletiva
+services:
+  terra-coletiva:
+    build: .
+    restart: unless-stopped
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.terra-coletiva.rule=Host(`${TERRA_COLETIVA_DOMAIN}`)"
+      - "traefik.http.routers.terra-coletiva.tls=true"
+      - "traefik.http.routers.terra-coletiva.tls.certresolver=letsencrypt"
+      - "traefik.http.services.terra-coletiva.loadbalancer.server.port=80"
+
+networks:
+  proxy:
+    external: true

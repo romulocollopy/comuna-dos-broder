@@ -1,0 +1,6 @@
+# The image needs only the presentation's static files and the nginx config.
+*
+!presentation/html/
+!presentation/css/
+!presentation/images/
+!nginx.conf
