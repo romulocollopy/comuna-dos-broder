@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cenários — Terra Coletiva</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Terra Coletiva</a>
+    <a href="index.html">Início</a>
+    <a href="cenarios.html" class="active">Cenários</a>
+    <a href="estresse.html">Estresse</a>
+    <a href="renda.html">Renda</a>
+    <a href="riscos.html">Riscos &amp; Vantagens</a>
+    <a href="contrato.html">Contrato</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">Cenários</p>
+    <h1>Como o dinheiro se move</h1>
+    <p class="lede">Simulações com contribuições de R$ 1.500/mês por cota, 10% para a
+    Reserva de Garantia, horizonte de 10 anos. Números ilustrativos.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="fund-growth">
+    <h2>Para onde vai o dinheiro</h2>
+    <p>A área empilhada mostra o <strong>caixa</strong> (dinheiro ainda não gasto), a
+    <strong>terra comprada</strong> e a <strong>reserva de garantia</strong>. A linha
+    roxa é a Reserva de Terra — a base da sua cota.</p>
+    <figure>
+      <img src="../images/fund-growth.png" alt="Gráficos de área mostrando caixa, terra comprada e reserva de garantia para 1 família e para 3 cotas">
+      <figcaption>À esquerda: 1 família sozinha não compra nem a terra mais barata em 10 anos.
+      À direita: 3 cotas compram a primeira terra (linha pontilhada).</figcaption>
+    </figure>
+    <div class="callout"><p><strong>Uma família sozinha não consegue.</strong> O coletivo
+    não é opcional — é o ponto.</p></div>
+  </section>
+
+  <section id="trade-up">
+    <h2>Comprar barato → trocar por terra maior</h2>
+    <p>Compramos a terra mais barata assim que o caixa permite e trocamos por uma maior
+    quando o dinheiro permitir, até o tamanho ideal.</p>
+    <figure>
+      <img src="../images/trade-up.png" alt="Gráficos de caixa, terra comprada e fundo total para 3 cotas e para 10 famílias">
+      <figcaption>3 cotas alcançam só a primeira terra. 10 famílias alcançam as três
+      etapas até o tamanho ideal (~R$ 1,5 milhão).</figcaption>
+    </figure>
+  </section>
+
+  <section id="late-joiners">
+    <h2>Quem entra depois</h2>
+    <p>Alguém entra aos 2 ou aos 5 anos? Três formas — sempre combinadas na entrada:</p>
+    <dl>
+      <div class="qa"><dt>Complemento</dt>
+        <dd>Paga de uma vez o equivalente ao tempo perdido e mantém o ritmo → paridade plena (25%).</dd></div>
+      <div class="qa"><dt>Acelerado</dt>
+        <dd>Sem valor retroativo; paga 2× por mês até alcançar os demais.</dd></div>
+      <div class="qa"><dt>Reduzido</dt>
+        <dd>Paga apenas a partir da entrada → cota permanentemente menor (14% se entrar aos 5 anos).</dd></div>
+    </dl>
+    <figure>
+      <img src="../images/late-joiners.png" alt="Gráficos de participação ao longo do tempo para as três formas de entrada, aos 2 e aos 5 anos">
+      <figcaption>A linha tracejada é a divisão igual entre 4 cotas (25%).</figcaption>
+    </figure>
+  </section>
+
+  <div class="pagenav">
+    <a href="index.html">← Início</a>
+    <a href="estresse.html">Testes de estresse →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Simulações geradas em Python (pandas + matplotlib) a partir do modelo do projeto.
+    Números ilustrativos — o contrato e os princípios estão no projeto Terra Coletiva.</p>
+  </div>
+</footer>
+
+</body>
+</html>

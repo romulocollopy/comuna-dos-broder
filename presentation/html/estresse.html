@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testes de estresse — Terra Coletiva</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">Terra Coletiva</a>
+    <a href="index.html">Início</a>
+    <a href="cenarios.html">Cenários</a>
+    <a href="estresse.html" class="active">Estresse</a>
+    <a href="renda.html">Renda</a>
+    <a href="riscos.html">Riscos &amp; Vantagens</a>
+    <a href="contrato.html">Contrato</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="kicker">Testes de estresse</p>
+    <h1>E quando a vida aperta?</h1>
+    <p class="lede">Testamos o modelo nos pontos fracos: saídas, corrida na reserva,
+    preço da terra e inadimplência.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="withdrawal">
+    <h2>Saída antes vs depois da compra da terra</h2>
+    <p>Sair <strong>antes</strong> da compra é simples: o dinheiro ainda está em caixa.
+    Sair <strong>depois</strong> é o momento mais delicado — o dinheiro já virou terra.</p>
+    <figure>
+      <img src="../images/withdrawal.png" alt="Gráfico mostrando caixa, terra comprada e reserva de garantia com uma saída no mês 90">
+      <figcaption>Na saída (mês 90), usa-se o caixa, depois a reserva de garantia, e
+      vende-se um pequeno pedaço da terra como último recurso.</figcaption>
+    </figure>
+  </section>
+
+  <section id="run">
+    <h2>Corrida na reserva — duas saídas ao mesmo tempo</h2>
+    <p>O pior caso para um fundo auto-segurado: duas pessoas saem juntas, com o dinheiro
+    já investido em terra.</p>
+    <figure>
+      <img src="../images/run-reserve.png" alt="Gráfico mostrando a terra comprada caindo quando duas pessoas saem ao mesmo tempo">
+      <figcaption>Duas saídas simultâneas esgotam a reserva e forçam vender quase metade
+      da terra. Por isso o contrato tem cascata de pagamento e fila de saídas.</figcaption>
+    </figure>
+  </section>
+
+  <section id="appreciation">
+    <h2>O preço da terra muda tudo</h2>
+    <p>Na média histórica, a terra agrícola brasileira <strong>valoriza</strong> — subiu
+    <strong>113% nos últimos 5 anos</strong> (Scot Consultoria, via Canal Rural; o hectare
+    médio foi de R$ 14,8 mil a R$ 31,6 mil). Desvalorização nominal é rara. Por isso
+    usamos dois cenários: <strong>pessimista</strong> (0% a.a. — a terra estagna e perde só
+    para a inflação) e <strong>realista</strong> (+6% a.a. — ainda bem abaixo da média).</p>
+    <figure>
+      <img src="../images/appreciation.png" alt="Gráfico comparando o fundo total sob preço da terra pessimista (0%) e realista (+6% ao ano)">
+      <figcaption>Mesma poupança, dois cenários de preço nominal. Valorização antecipa a
+      troca de terra; estagnação atrasa (perda real de ~4–5% ao ano).</figcaption>
+    </figure>
+  </section>
+
+  <section id="asymmetric">
+    <h2>Contribuições desiguais</h2>
+    <figure>
+      <img src="../images/asymmetric.png" alt="Gráfico de participação proporcional para contribuições de 2x, 1x e 0.5x">
+      <figcaption>Quem põe mais, tem mais — proporcional ao aporte. Isso é justo por
+      definição, não um defeito.</figcaption>
+    </figure>
+  </section>
+
+  <section id="default">
+    <h2>Quem para de pagar é diluído</h2>
+    <figure>
+      <img src="../images/default.png" alt="Gráfico mostrando a participação de quem para de pagar caindo de 33% para 20%">
+      <figcaption>Sem punição nem perdimento: quem para de pagar mantém o que já pôs,
+      mas a cota se dilui conforme os outros continuam.</figcaption>
+    </figure>
+  </section>
+
+  <div class="pagenav">
+    <a href="cenarios.html">← Cenários</a>
+    <a href="renda.html">Renda da terra →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Simulações geradas em Python (pandas + matplotlib) a partir do modelo do projeto.
+    Números ilustrativos.</p>
+  </div>
+</footer>
+
+</body>
+</html>
