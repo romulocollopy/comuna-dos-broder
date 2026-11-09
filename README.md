@@ -4,6 +4,16 @@
 
 ---
 
+## ⚠️ Sobre este projeto
+
+Isto foi feito pelas **vozes da minha cabeça** (agentes de IA) com **DeepSeek**. É um **rascunho de uma ideia** — não um produto acabado — e **não é aconselhamento jurídico**.
+
+- **Quer melhorar?** Abra uma **issue**. Toda crítica e sugestão é bem-vinda.
+- **Quer o seu?** Faça um **fork** e comece a sua própria comunidade de amigos. É livre.
+- **Mas cada um com os seus problemas.** Leis, impostos e realidades mudam de lugar pra lugar. **Não me responsabilizo juridicamente** — nem pela sua terra, nem pelos seus amigos, nem pelos seus boletos.
+
+---
+
 ## What this is
 
 People opt into a contract (as co-owners of a company/vehicle, not passive investors) to build a shared fund. The fund buys land. Over time the group may build homes and live there — e.g. ten friends retiring together on shared land.
